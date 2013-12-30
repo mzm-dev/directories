@@ -366,3 +366,6 @@ Cache::config('_cake_model_', array(
 	'serialize' => ($engine === 'File'),
 	'duration' => $duration
 ));
+
+//name project
+Configure::write('Prj.name', 'Simple Staff Directory');

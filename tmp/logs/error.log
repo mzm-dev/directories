@@ -1,0 +1,59 @@
+2013-12-30 13:45:52 Error: [MissingControllerException] Controller class StaffsController could not be found.
+Exception Attributes: array (
+  'class' => 'StaffsController',
+  'plugin' => NULL,
+)
+Request URL: /2014/directory/staffs/view/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/2014/directory/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-30 13:59:59 Error: Fatal Error (4): syntax error, unexpected '<' in [/Applications/XAMPP/xamppfiles/htdocs/2014/directory/View/Staffs/index.ctp, line 77]
+2013-12-30 13:59:59 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /2014/directory/staffs
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp2x/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 77)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 77, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp2x/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 77, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp2x/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-30 13:59:59 Error: Fatal Error (4): syntax error, unexpected '<' in [/Applications/XAMPP/xamppfiles/htdocs/2014/directory/View/Staffs/index.ctp, line 77]
+2013-12-30 13:59:59 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /2014/directory/staffs
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp2x/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 77)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 77, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp2x/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 77, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp2x/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-30 14:00:00 Error: Fatal Error (4): syntax error, unexpected '<' in [/Applications/XAMPP/xamppfiles/htdocs/2014/directory/View/Staffs/index.ctp, line 77]
+2013-12-30 14:00:00 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /2014/directory/staffs
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp2x/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 77)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 77, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp2x/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 77, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp2x/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-30 14:00:00 Error: Fatal Error (4): syntax error, unexpected '<' in [/Applications/XAMPP/xamppfiles/htdocs/2014/directory/View/Staffs/index.ctp, line 77]
+2013-12-30 14:00:00 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /2014/directory/staffs
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp2x/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 77)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 77, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp2x/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 77, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp2x/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-30 14:00:02 Error: Fatal Error (4): syntax error, unexpected '<' in [/Applications/XAMPP/xamppfiles/htdocs/2014/directory/View/Staffs/index.ctp, line 77]
+2013-12-30 14:00:02 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /2014/directory/staffs
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp2x/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 77)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 77, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp2x/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 77, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp2x/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
