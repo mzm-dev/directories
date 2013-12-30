@@ -1,7 +1,7 @@
 Simple Directories Staff
 =======
 
-A simple staff directory application using CakePhP 2.x
+A simple staff directory application using CakePHP 2.x
 
 Requirements
 =======
