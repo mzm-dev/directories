@@ -8,10 +8,10 @@ Requirements
 * CakePHP 2.x
 * PHP5
 
-
 Database
 =======
 
+```go
 --
 -- Database: `db_directory`
 --
@@ -48,6 +48,7 @@ CREATE TABLE IF NOT EXISTS `staffs` (
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+```
 
 
 Download https://github.com/mzm-dev/directories/archive/master.zip
