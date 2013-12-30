@@ -35,12 +35,8 @@
                 echo $this->Form->input('email', array(
                     'label' => array('class' => 'control-label', 'text' => 'email'),
                     'placeholder' => 'email',
-                    'class' => 'span6'));
-                echo $this->Form->input('ext', array(
-                    'label' => array('class' => 'control-label', 'text' => 'ext'),
-                    'placeholder' => 'ext',
-                    'class' => 'span6'));
-                echo $this->Form->input('telhp', array(
+                    'class' => 'span6'));                
+                echo $this->Form->input('phone', array(
                     'label' => array('class' => 'control-label', 'text' => 'telhp'),
                     'placeholder' => 'telhp',
                     'class' => 'span6'));

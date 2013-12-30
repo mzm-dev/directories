@@ -54,18 +54,11 @@
                             <?php echo h($staff['Staff']['email']); ?>
                             &nbsp;
                         </td>
-                    </tr>
-                    <tr>
-                        <td><strong><?php echo __('Ext'); ?></strong></td>
-                        <td>
-                            <?php echo h($staff['Staff']['ext']); ?>
-                            &nbsp;
-                        </td>
-                    </tr>
+                    </tr>                    
                     <tr>
                         <td><strong><?php echo __('Telhp'); ?></strong></td>
                         <td>
-                            <?php echo h($staff['Staff']['telhp']); ?>
+                            <?php echo h($staff['Staff']['phone']); ?>
                             &nbsp;
                         </td>
                     </tr>
