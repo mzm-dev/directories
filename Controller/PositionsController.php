@@ -1,4 +1,12 @@
 <?php
+/**
+ * Staff Directory
+ *
+ * @author      Mohamad Zaki Mustafa <mohdzaki04@gmail.com>
+ * @license     http://opensource.org/licenses/mit-license.php - Licensed under The MIT License
+ * @link        https://github.com/mzm-dev
+ */
+
 App::uses('AppController', 'Controller');
 /**
  * Positions Controller
