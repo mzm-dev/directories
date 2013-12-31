@@ -22,3 +22,12 @@ $('#myCollapsible').collapse({
 
 //Dropdown
 $('.dropdown-toggle').dropdown();
+
+$('#demoOne').listnav();
+
+$('#demoFour').listnav({ 
+    includeNums: false 
+});
+
+//Tiny Scrollbar
+$('#scrollbar-one').tinyscrollbar();

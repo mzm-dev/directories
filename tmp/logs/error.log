@@ -152,3 +152,111 @@ Stack Trace:
 #3 /Applications/XAMPP/xamppfiles/htdocs/cakephp2x/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-12-31 11:57:24 Error: [NotFoundException] Invalid department
+Request URL: /2014/directory/departments/view/52
+Stack Trace:
+#0 [internal function]: DepartmentsController->view('52')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp2x/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(DepartmentsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp2x/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp2x/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(DepartmentsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/XAMPP/xamppfiles/htdocs/2014/directory/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-31 12:49:19 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /2014/directory/js/libs/listnav.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/2014/directory/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-31 13:23:29 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /2014/directory/js/libs/jquery.min.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/2014/directory/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-31 13:26:50 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /2014/directory/js/libs/jquery.min.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/2014/directory/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-31 13:26:55 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /2014/directory/js/libs/jquery.min.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/2014/directory/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-31 13:26:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /2014/directory/js/libs/jquery.min.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/2014/directory/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-31 13:27:03 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /2014/directory/js/libs/jquery.min.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/2014/directory/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-31 13:32:16 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /2014/directory/js/libs/jquery.min.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/2014/directory/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-31 13:32:24 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /2014/directory/js/libs/jquery.min.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/2014/directory/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-31 13:33:49 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /2014/directory/js/libs/jquery.min.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/2014/directory/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-31 13:33:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /2014/directory/js/libs/jquery.min.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/2014/directory/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-31 13:34:45 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /2014/directory/js/libs/jquery.min.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/2014/directory/webroot/index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

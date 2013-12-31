@@ -22,6 +22,22 @@ class StaffsController extends AppController {
      *
      * @return void
      */
+    public function list_view() {
+        $this->Staff->recursive = 0;
+        $staffs = $this->Staff->find('all');
+        $this->set('staffs', $staffs);
+    }
+    public function grid_view() {
+        $this->Staff->recursive = 0;
+        $staffs = $this->Staff->find('all');
+        $this->set('staffs', $staffs);
+    }
+
+    /**
+     * index method
+     *
+     * @return void
+     */
     public function index() {
         if (!empty($this->request->data['Staff']['query'])) {
             $conditions1 = array('OR' => array(

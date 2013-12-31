@@ -7,7 +7,7 @@
             </div>
             <div class="widget-body" id="departments-form">
                 <?php
-                echo $this->Form->create('Department', array(
+                echo $this->Form->create('Department', array('novalidate',
                     'class' => 'form-horizontal no-margin',
                     'inputDefaults' => array(
                         'format' => array('before', 'label', 'between', 'input', 'error', 'after'),
@@ -17,8 +17,8 @@
                         'after' => '</div>', 'error' => array('attributes' => array('wrap' => 'span', 'class' => 'help-inline')))));
 
                 echo $this->Form->input('name', array(
-                    'label' => array('class' => 'control-label', 'text' => 'name'),
-                    'placeholder' => 'name',
+                    'label' => array('class' => 'control-label', 'text' => 'Name'),
+                    'placeholder' => 'Name of Department',
                     'class' => 'span6'));
                 ?>
                 <div class="form-actions no-margin">

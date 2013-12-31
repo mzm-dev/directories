@@ -31,11 +31,12 @@ $cakeDescription = __d('cake_dev', Configure::read('Prj.name'));
         echo $this->fetch('meta');
 
         echo $this->Html->css('main');
+        echo $this->Html->css('listnav');
         echo $this->Html->css('style');        
 
 
         echo $this->fetch('css');
-        echo $this->Html->script('libs/jquery.min');
+        echo $this->Html->script('jquery.min');
         echo $this->fetch('script');
         ?>
 
@@ -63,8 +64,10 @@ $cakeDescription = __d('cake_dev', Configure::read('Prj.name'));
             </div>
         </div>   
         <?php
-        echo $this->Html->script('libs/bootstrap');
-        echo $this->Html->script('libs/html5-trunk');                
+        echo $this->Html->script('bootstrap');
+        echo $this->Html->script('html5-trunk');                
+        echo $this->Html->script('tiny-scrollbar');
+        echo $this->Html->script('listnav');
         echo $this->Html->script('custom');
         echo $this->fetch('script');
         ?>

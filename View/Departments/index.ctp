@@ -14,10 +14,10 @@
             <div class="widget-body">
                 <table class="table table-condensed table-striped table-bordered table-hover no-margin">
                     <tr>
-                        <th><?php echo $this->Paginator->sort('id'); ?></th>
+                        <th class="span1"><?php echo $this->Paginator->sort('id'); ?></th>
                         <th><?php echo $this->Paginator->sort('name'); ?></th>
-                        <th><?php echo $this->Paginator->sort('created'); ?></th>
-                        <th><?php echo $this->Paginator->sort('modified'); ?></th>
+                        <th class="span3"><?php echo $this->Paginator->sort('created'); ?></th>
+                        <th class="span3"><?php echo $this->Paginator->sort('modified'); ?></th>
                         <th class="span2"><?php echo __('Actions'); ?></th>
                     </tr>
                     <?php foreach ($departments as $department): ?>
@@ -27,9 +27,9 @@
                             <td><?php echo h($department['Department']['created']); ?>&nbsp;</td>
                             <td><?php echo h($department['Department']['modified']); ?>&nbsp;</td>
                             <td class="actions">
-                                <?php echo $this->Html->link(__('View'), array('action' => 'view', $department['Department']['id'])); ?>
-                                <?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $department['Department']['id'])); ?>
-                                <?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $department['Department']['id']), null, __('Are you sure you want to delete # %s?', $department['Department']['id'])); ?>
+                                <?php echo $this->Html->link(('<span class="fs1" aria-hidden="true" data-icon="&#xe07f;"></span>'), array('action' => 'view', $department['Department']['id']), array('data-placement' => 'top', 'data-original-title' => 'View', 'escape' => FALSE)); ?>   
+                                <?php echo $this->Html->link(('<span class="fs1" aria-hidden="true" data-icon="&#xe005;"></span>'), array('action' => 'edit', $department['Department']['id']), array('data-placement' => 'top', 'data-original-title' => 'Edit', 'escape' => FALSE)); ?>
+                                <?php echo $this->Form->postLink(__('<span class="fs1" aria-hidden="true" data-icon="&#xe0a8;"></span>'), array('action' => 'delete', $department['Department']['id']), array('data-placement' => 'top', 'data-original-title' => 'Delete', 'escape' => FALSE), __('Are you sure you want to delete # %s?', $department['Department']['id'])); ?>
                             </td>
                         </tr>
                     <?php endforeach; ?>
