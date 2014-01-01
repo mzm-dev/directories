@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Directories by mzm-dev</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Directories</h1>
+        <p class="header">Staff Directory using CakePHP</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/mzm-dev/directories/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/mzm-dev/directories/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/mzm-dev/directories">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/mzm-dev">mzm-dev</a></p>
+
+
+      </header>
+      <section>
+        <h1>
+<a name="simple-directories-staff" class="anchor" href="#simple-directories-staff"><span class="octicon octicon-link"></span></a>Simple Directories Staff</h1>
+
+<p>A simple staff directory application using CakePHP 2.x</p>
+
+<h1>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h1>
+
+<ul>
+<li>CakePHP 2.x</li>
+<li>PHP5</li>
+</ul><h1>
+<a name="url-" class="anchor" href="#url-"><span class="octicon octicon-link"></span></a>URL </h1>
+
+<p><a href="http://mzm-dev.github.io/directories/">http://mzm-dev.github.io/directories/</a></p>
+
+<h1>
+<a name="database" class="anchor" href="#database"><span class="octicon octicon-link"></span></a>Database</h1>
+
+<pre lang="code"><code>--
+-- Database: `db_directory`
+--
+
+-- --------------------------------------------------------
+CREATE TABLE IF NOT EXISTS `departments` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(200) NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+-- --------------------------------------------------------
+CREATE TABLE IF NOT EXISTS `positions` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(150) NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+-- --------------------------------------------------------
+CREATE TABLE IF NOT EXISTS `staffs` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `position_id` int(11) NOT NULL,
+  `department_id` int(11) NOT NULL,
+  `parent_id` int(11) DEFAULT NULL,
+  `lft` int(11) DEFAULT NULL,
+  `rght` int(11) DEFAULT NULL,
+  `name` varchar(200) NOT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `phone` varchar(100) NOT NULL,
+  `active` tinyint(1) NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+</code></pre>
+
+<p>Download <a href="https://github.com/mzm-dev/directories/archive/master.zip">https://github.com/mzm-dev/directories/archive/master.zip</a></p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
