@@ -8,6 +8,10 @@ Requirements
 * CakePHP 2.x
 * PHP5
 
+URL 
+======
+http://mzm-dev.github.io/directories/
+
 Database
 =======
 
