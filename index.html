@@ -49,45 +49,60 @@
 <h1>
 <a name="database" class="anchor" href="#database"><span class="octicon octicon-link"></span></a>Database</h1>
 
-<pre lang="code"><code>--
--- Database: `db_directory`
---
+<div class="highlight highlight-go"><pre><span class="o">--</span>
+<span class="o">--</span> <span class="nx">Database</span><span class="p">:</span> <span class="s">`db_directory`</span>
+<span class="o">--</span>
 
--- --------------------------------------------------------
-CREATE TABLE IF NOT EXISTS `departments` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(200) NOT NULL,
-  `created` datetime NOT NULL,
-  `modified` datetime NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
--- --------------------------------------------------------
-CREATE TABLE IF NOT EXISTS `positions` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(150) NOT NULL,
-  `created` datetime NOT NULL,
-  `modified` datetime NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
--- --------------------------------------------------------
-CREATE TABLE IF NOT EXISTS `staffs` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `position_id` int(11) NOT NULL,
-  `department_id` int(11) NOT NULL,
-  `parent_id` int(11) DEFAULT NULL,
-  `lft` int(11) DEFAULT NULL,
-  `rght` int(11) DEFAULT NULL,
-  `name` varchar(200) NOT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `phone` varchar(100) NOT NULL,
-  `active` tinyint(1) NOT NULL,
-  `created` datetime DEFAULT NULL,
-  `modified` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-</code></pre>
+<span class="o">--</span> <span class="o">--------------------------------------------------------</span>
+<span class="nx">CREATE</span> <span class="nx">TABLE</span> <span class="nx">IF</span> <span class="nx">NOT</span> <span class="nx">EXISTS</span> <span class="s">`departments`</span> <span class="p">(</span>
+  <span class="s">`id`</span> <span class="nb">int</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="nx">NOT</span> <span class="nx">NULL</span> <span class="nx">AUTO_INCREMENT</span><span class="p">,</span>
+  <span class="s">`name`</span> <span class="nx">varchar</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span> <span class="nx">NOT</span> <span class="nx">NULL</span><span class="p">,</span>
+  <span class="s">`created`</span> <span class="nx">datetime</span> <span class="nx">NOT</span> <span class="nx">NULL</span><span class="p">,</span>
+  <span class="s">`modified`</span> <span class="nx">datetime</span> <span class="nx">NOT</span> <span class="nx">NULL</span><span class="p">,</span>
+  <span class="nx">PRIMARY</span> <span class="nx">KEY</span> <span class="p">(</span><span class="s">`id`</span><span class="p">)</span>
+<span class="p">)</span> <span class="nx">ENGINE</span><span class="p">=</span><span class="nx">MyISAM</span> <span class="nx">DEFAULT</span> <span class="nx">CHARSET</span><span class="p">=</span><span class="nx">latin1</span> <span class="nx">AUTO_INCREMENT</span><span class="p">=</span><span class="mi">1</span> <span class="p">;</span>
+<span class="o">--</span> <span class="o">--------------------------------------------------------</span>
+<span class="nx">CREATE</span> <span class="nx">TABLE</span> <span class="nx">IF</span> <span class="nx">NOT</span> <span class="nx">EXISTS</span> <span class="s">`positions`</span> <span class="p">(</span>
+  <span class="s">`id`</span> <span class="nb">int</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="nx">NOT</span> <span class="nx">NULL</span> <span class="nx">AUTO_INCREMENT</span><span class="p">,</span>
+  <span class="s">`name`</span> <span class="nx">varchar</span><span class="p">(</span><span class="mi">150</span><span class="p">)</span> <span class="nx">NOT</span> <span class="nx">NULL</span><span class="p">,</span>
+  <span class="s">`created`</span> <span class="nx">datetime</span> <span class="nx">NOT</span> <span class="nx">NULL</span><span class="p">,</span>
+  <span class="s">`modified`</span> <span class="nx">datetime</span> <span class="nx">NOT</span> <span class="nx">NULL</span><span class="p">,</span>
+  <span class="nx">PRIMARY</span> <span class="nx">KEY</span> <span class="p">(</span><span class="s">`id`</span><span class="p">)</span>
+<span class="p">)</span> <span class="nx">ENGINE</span><span class="p">=</span><span class="nx">MyISAM</span> <span class="nx">DEFAULT</span> <span class="nx">CHARSET</span><span class="p">=</span><span class="nx">latin1</span> <span class="nx">AUTO_INCREMENT</span><span class="p">=</span><span class="mi">1</span> <span class="p">;</span>
+<span class="o">--</span> <span class="o">--------------------------------------------------------</span>
+<span class="nx">CREATE</span> <span class="nx">TABLE</span> <span class="nx">IF</span> <span class="nx">NOT</span> <span class="nx">EXISTS</span> <span class="s">`staffs`</span> <span class="p">(</span>
+  <span class="s">`id`</span> <span class="nb">int</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="nx">NOT</span> <span class="nx">NULL</span> <span class="nx">AUTO_INCREMENT</span><span class="p">,</span>
+  <span class="s">`position_id`</span> <span class="nb">int</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="nx">NOT</span> <span class="nx">NULL</span><span class="p">,</span>
+  <span class="s">`department_id`</span> <span class="nb">int</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="nx">NOT</span> <span class="nx">NULL</span><span class="p">,</span>
+  <span class="s">`parent_id`</span> <span class="nb">int</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="nx">DEFAULT</span> <span class="nx">NULL</span><span class="p">,</span>
+  <span class="s">`lft`</span> <span class="nb">int</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="nx">DEFAULT</span> <span class="nx">NULL</span><span class="p">,</span>
+  <span class="s">`rght`</span> <span class="nb">int</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="nx">DEFAULT</span> <span class="nx">NULL</span><span class="p">,</span>
+  <span class="s">`name`</span> <span class="nx">varchar</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span> <span class="nx">NOT</span> <span class="nx">NULL</span><span class="p">,</span>
+  <span class="s">`email`</span> <span class="nx">varchar</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="nx">DEFAULT</span> <span class="nx">NULL</span><span class="p">,</span>
+  <span class="s">`phone`</span> <span class="nx">varchar</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="nx">NOT</span> <span class="nx">NULL</span><span class="p">,</span>
+  <span class="s">`active`</span> <span class="nx">tinyint</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="nx">NOT</span> <span class="nx">NULL</span><span class="p">,</span>
+  <span class="s">`created`</span> <span class="nx">datetime</span> <span class="nx">DEFAULT</span> <span class="nx">NULL</span><span class="p">,</span>
+  <span class="s">`modified`</span> <span class="nx">datetime</span> <span class="nx">DEFAULT</span> <span class="nx">NULL</span><span class="p">,</span>
+  <span class="nx">PRIMARY</span> <span class="nx">KEY</span> <span class="p">(</span><span class="s">`id`</span><span class="p">)</span>
+<span class="p">)</span> <span class="nx">ENGINE</span><span class="p">=</span><span class="nx">MyISAM</span> <span class="nx">DEFAULT</span> <span class="nx">CHARSET</span><span class="p">=</span><span class="nx">latin1</span> <span class="nx">AUTO_INCREMENT</span><span class="p">=</span><span class="mi">1</span> <span class="p">;</span>
+</pre></div>
 
 <p>Download <a href="https://github.com/mzm-dev/directories/archive/master.zip">https://github.com/mzm-dev/directories/archive/master.zip</a></p>
+
+<h1>
+<a name="comment" class="anchor" href="#comment"><span class="octicon octicon-link"></span></a>Comment</h1>
+
+<p>Any comment to improve this application. </p>
+
+<p><a href="https://www.facebook.com/mzmDev"><img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-prn2/1510379_258048164363272_1996045806_n.png" alt="mzmDev"></a></p>
+
+<p><a href="https://www.facebook.com/mzmDev">https://www.facebook.com/mzmDev</a></p>
+
+<h2>
+<a name="get-support" class="anchor" href="#get-support"><span class="octicon octicon-link"></span></a>Get Support!</h2>
+
+<p><a href="http://www.cakephp.org"><img src="http://cakephp.org/img/logo/powered_by_cake_logo_25.png" alt="CakePHP"></a>
+<img src="https://raw.github.com/cakephp/cakephp/master/lib/Cake/Console/Templates/skel/webroot/img/cake.power.gif" alt="Cake Power"></p>
       </section>
       <footer>
         <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
