@@ -57,3 +57,17 @@ CREATE TABLE IF NOT EXISTS `staffs` (
 
 Download https://github.com/mzm-dev/directories/archive/master.zip
 
+Comment
+=======
+Any comment to improve this application. 
+
+[![mzmDev](https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-prn2/1510379_258048164363272_1996045806_n.png)](https://www.facebook.com/mzmDev)
+
+https://www.facebook.com/mzmDev
+
+Get Support!
+------------
+
+[![CakePHP](http://cakephp.org/img/logo/powered_by_cake_logo_25.png)](http://www.cakephp.org)
+![Cake Power](https://raw.github.com/cakephp/cakephp/master/lib/Cake/Console/Templates/skel/webroot/img/cake.power.gif)
+
